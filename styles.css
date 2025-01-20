@@ -12,10 +12,8 @@ body {
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
-    /* Ensures the body takes full viewport height */
     display: flex;
     flex-direction: column;
-    /* Makes content and footer stack vertically */
 }
 
 /* Header Styles */
@@ -27,6 +25,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
 header img {
@@ -52,36 +51,23 @@ nav {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin-bottom: 1rem;
-    /* Reduced margin between navbar and content */
 }
 
-/* General styles for all links */
 nav a {
     color: black;
     text-decoration: none;
     margin: 0 1rem;
-    /* Consistent spacing between links */
     padding: 0.5rem 0;
-    /* Add padding for uniform height */
     font-weight: normal;
-    /* Default weight */
     transition: all 0.3s ease;
-    /* Smooth transitions */
     border-bottom: 2px solid transparent;
-    /* Invisible border to avoid shifting */
 }
 
-/* Active link styles */
 nav a.active {
     color: blue;
-    /* Highlight color for active link */
     border-bottom: 2px solid blue;
-    /* Visible border to indicate active link */
-    font-weight: normal;
-    /* Keep the font-weight consistent */
 }
 
-/* Hover effects (optional) */
 nav a:hover {
     color: darkblue;
     border-bottom: 2px solid darkblue;
@@ -90,14 +76,11 @@ nav a:hover {
 /* Main Content */
 main {
     padding: 10px;
-    /* Add padding for small screens */
     text-align: center;
     width: 100%;
-    /* Expand to full width */
     display: flex;
     flex-direction: column;
 }
-
 
 /* Buttons */
 button {
@@ -108,6 +91,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -121,7 +105,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    /* Reduce padding for mobile */
     position: relative;
     flex-shrink: 0;
     display: flex;
@@ -129,105 +112,55 @@ footer {
     justify-content: center;
 }
 
-
 /* List Styles */
 ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 1rem 0;
-}
-
-ul li {
-    margin: 0.5rem 0;
-}
-
-/* Background for <h3> tags */
-h3 {
-    background-color: rgb(255, 204, 170);
-    padding: 0.5rem;
-    margin-top: 1rem;
-    color: #333;
-    border-radius: 5px;
-}
-
-/* Styles for the list container */
-ul {
     background-color: white;
-    /* White box */
     border: 1px solid #ccc;
-    /* Optional border for a box effect */
     border-radius: 10px;
-    /* Rounded corners */
     padding: 1rem;
-    /* Inner padding of the box */
     margin: 1rem auto;
-    /* Center the box with small margins */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
     max-width: 800px;
-    /* Restrict the width of the box */
     list-style: none;
-    /* Remove default list styling */
 }
 
-/* Styles for list items */
 ul li {
     margin-bottom: 1.5rem;
-    /* Space between items */
 }
 
-/* Styles for the bolded titles */
 ul li b {
     display: block;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
-/* Styles for the paragraph within list items */
 ul li p {
     margin: 0.5rem 0;
-    /* Small spacing between paragraphs */
     line-height: 1.5;
-    /* Improve readability */
 }
 
+/* White Box */
 .white-box {
     background-color: white;
-    /* White background for the box */
     border: 1px solid #ccc;
-    /* Light gray border */
     border-radius: 8px;
-    /* Rounded corners */
     padding: 20px;
-    /* Space inside the box */
     max-width: 500px;
-    /* Set a maximum width */
     margin: 20px auto;
-    /* Center the box horizontally with margin */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
 }
 
+/* Images */
 img {
-    max-width: 600%;
-    /* Ensures the image doesn't exceed the container width */
+    max-width: 100%;
     height: auto;
-    /* Maintains the aspect ratio */
 }
 
 img.small {
     max-width: 600px;
-    /* Set the specific size for smaller images */
 }
 
-
-
-
-
-
-
-
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         max-width: 100%;
@@ -237,7 +170,6 @@ img.small {
 
     main {
         font-size: 1rem;
-        /* Increase text size slightly */
     }
 
     form input,
@@ -246,13 +178,11 @@ img.small {
     }
 }
 
+/* Form Styles */
 .container {
     max-width: 100%;
-    /* Allow full width */
     padding: 10px;
-    /* Adjust padding for smaller screens */
     margin: 0 auto;
-    /* Centering for smaller screens */
 }
 
 form label {
@@ -265,11 +195,9 @@ form label {
 form input {
     width: 100%;
     padding: 12px 15px;
-    /* Adds more space inside the input box */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    box-sizing: border-box;
     background-color: #f9f9f9;
 }
 
@@ -285,9 +213,4 @@ form button {
 
 form button:hover {
     background-color: #005f99;
-}
-
-header {
-    transition: all 0.3s ease-in-out;
-    /* Check if transitions are smooth */
 }
