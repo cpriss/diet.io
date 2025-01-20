@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Progress</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <style>
+              body {
+    padding-bottom: 50px; /* Adjust to the footer height */
+}
+
+footer {
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    background-color: #333; /* Dark background color for the footer */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center-align the text */
+    padding: 10px 0; /* Add spacing within the footer */
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom: 0; /* Position it at the very bottom */
+    left: 0; /* Ensure it starts at the left edge */
+    z-index: 1000; /* Place it above other elements */
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1>From Flab to Fab</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="foods.html">Low-Calorie Foods</a>
+        <a href="exercises.html">Exercises</a>
+                    <a href="calculator.html">Calorie-Calculator</a>
+
+        <a href="progress.html" class="active">Personal Progress</a>
+
+
+    </nav>
+
+    <main>
+        <div class="white-box">
+            <h2>Track Your Weight</h2>
+            <form id="progress-form">
+                <label for="current-weight">Enter your weight (lbs):</label><br>
+                <input type="number" id="current-weight" required><br><br>
+                <button type="submit">Log Weight</button>
+            </form><br>
+            <h3>Your Progress:</h3>
+            <p id="progress-output">No data logged yet.</p>
+        </div>
+    </main>
+
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 BBC</p>
+    </footer>
+</body>
+
+</html>
