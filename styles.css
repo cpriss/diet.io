@@ -160,24 +160,6 @@ img.small {
     max-width: 600px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding: 10px;
-        margin: 0 auto;
-    }
-
-    main {
-        font-size: 1rem;
-    }
-
-    form input,
-    form button {
-        width: 100%;
-    }
-}
-
 /* Form Styles */
 .container {
     max-width: 100%;
